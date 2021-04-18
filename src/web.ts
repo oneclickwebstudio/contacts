@@ -1,4 +1,4 @@
-import { WebPlugin, registerWebPlugin } from "@capacitor/core";
+import { WebPlugin } from "@capacitor/core";
 import { ContactsPlugin, PermissionStatus, Contact } from "./definitions";
 
 export class ContactsPluginWeb extends WebPlugin implements ContactsPlugin {
@@ -17,9 +17,3 @@ export class ContactsPluginWeb extends WebPlugin implements ContactsPlugin {
     throw new Error("getContacts not available");
   }
 }
-
-const Contacts = new ContactsPluginWeb();
-
-export { Contacts };
-
-registerWebPlugin(Contacts);

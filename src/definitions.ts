@@ -1,8 +1,3 @@
-declare module "@capacitor/core" {
-  interface PluginRegistry {
-    Contacts: ContactsPlugin;
-  }
-}
 export interface PermissionStatus {
   granted: boolean;
 }
