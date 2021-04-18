@@ -1,5 +1,5 @@
 import { registerPlugin } from "@capacitor/core";
-const Contacts = registerPlugin("NativeBiometric", {
+const Contacts = registerPlugin("CapContacts", {
   web: () => import("./web").then((m) => new m.ContactsPluginWeb()),
 });
 export * from "./definitions";
