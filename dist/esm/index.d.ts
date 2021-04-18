@@ -1,4 +1,4 @@
 import type { ContactsPlugin } from "./definitions";
-declare const ContactsPlugin: ContactsPlugin;
+declare const Contacts: ContactsPlugin;
 export * from "./definitions";
-export { ContactsPlugin };
+export { Contacts };
